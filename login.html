@@ -1,0 +1,206 @@
+<div class="ring">
+    <i style="--clr:#67b0ff;"></i>
+    <div class="ring">
+        <i style="--clr:#67b0ff;"></i>
+        
+    <div class="login">
+        <h2>Login</h2>
+        <div class="inputBx">
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="inputBx">
+            <input type="password" placeholder="Password" 
+            >
+            <br><br>
+            <div class="inputBx">
+                <input type="submit" value="Sign in">
+            </div>
+            <br>
+            br
+            <div class="links">
+                <a href="#">Forgot Password</a>
+                <a href="#">Signup</a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Quicksand", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #111;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .ring {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ring i {
+            position: absolute;
+            inset: 0;
+            border: 12px solid #fff;
+            transition: 0.5s;
+        }
+
+        .ring i:nth-child(1) {
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            animation: animate 6s linear infinite;
+        }
+
+        .ring:hover i {
+            border: 6px solid var(--clr);
+            filter: drop-shadow(0 0 20px var(--clr));
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes animate2 {
+            0% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(10deg);
+            }
+        }
+
+        .login {
+            position: absolute;
+            width: 300px;
+            height: 100%;
+            margin: 34px 34px 34px 34px;
+            padding: 44px 44px 44px 44px;
+            border-end-end-radius: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .login h2 {
+            font-size: 2em;
+            color: #fff;
+        }
+
+        .login .inputBx {
+            position: relative;
+            width: 100%;
+        }
+
+        .login .inputBx input {
+            position: relative;
+            width: 100%;
+            padding: 12px 20px;
+            background: transparent;
+            border: 2px solid #fff;
+            border-radius: 40px;
+            font-size: 1.2em;
+            color: #fff;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .login .inputBx input[type="submit"] {
+            width: 100%;
+             background: linear-gradient(315deg, #031997, #2fd2ff);
+            border: none;
+            cursor: pointer;
+        }
+
+        .login .inputBx input::placeholder {
+            color: rgb(255, 255, 255);
+        }
+
+        .login .links {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .login .links a {
+            color: #f90000;
+            text-decoration: none;
+            justify-content: space-between;
+            margin: 12px 12px;
+            padding: 12px 12px 12px;
+        }
+
+        h6 {
+            background-color: #0078ff;
+            color: #0078ff;
+            margin: 34px 34px 34px 34px;
+            padding: 43px 43px 43px 43px;
+            border: 12px solid black;
+            border-radius: 44px;
+            box-sizing: border-box;
+            box-shadow: 12px 22px 222px 12px aqua;
+            outline: 2px solid;
+            padding: 000px;
+            transform: rotate3d(123deg);
+            border: 1px solid black;
+            padding: 12px;
+            left: 12px;
+            nav-down: auto;
+            display: block;
+            src: format(34px);
+            top: 12%;
+            font: 1em sans-serif;
+            src: format(1px solid black);
+            color: #000;
+            right: 23px;
+            line-height-step: 12px;
+          width: 34px;
+            src: format();
+        }
+        .f2{
+            background-attachment: fixed;
+            background-color: #000;
+            margin-right: 33px;
+            visibility: hidden;
+            inline-size: block;
+            mask: none;
+            marker-start: inherit;
+            kerning: auto;
+            src: format(none);
+            src:calc(0);
+            left:34px;
+            local(0);
+            format(0);
+            inset: 12;
+            descent-override: 23px;
+        order: var(--clr);font-variant: normal;
+                color: rgba(0, 0, 0, .5);
+        }
+
+        
+    </style>

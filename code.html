@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+        body {
+            margin: 0px;
+
+            padding: 0px;
+        }
+
+        .container-main {
+            background-color: transparent rgb(221, 213, 213);
+            margin: 0px;
+            height: 770px;
+            padding: 20px 20px;
+            background-image: url(https://i.ibb.co/9gS2XD2/New-Project.png);
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: 13px 14px 14px 14px;
+            padding: 12px 12px 12px 12px;
+            justify-content: space-around;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 29px;
+            color: beige;
+
+        }
+
+        .col-1 {
+            width: 29%;
+            background-color: #e9e4ff;
+            margin: 2px 2px 2px 2px;
+            padding: 6px 6px 6px 5px;
+            border: 1px solid rgb(255, 254, 254);
+            box-shadow: 1px 1px 313px 12px rgb(255, 255, 255);
+            border-radius: 99px;
+
+
+            opacity: 1;
+        }
+
+        .col-2 {
+            width: 60%;
+
+        }
+
+        .col-3 {
+            width: 30%;
+
+        }
+        .p{
+          background-color: #000;
+          border: 23px solid beige;
+          margin: 44px 44px;
+        }
+
+        li.nav-items:after {
+            content: "";
+            position: absolute;
+            background-color: rgb(255, 255, 255) !important;
+            width: 0px;
+            height: 2px;
+            bottom: -5px;
+            left: 0px;
+            transition: all .3s;
+            color: bisque;
+        }
+        .section-1{
+         margin: 43px 43px 43px 43px;
+         padding: 65px;
+         content: '';
+          background-color: #544fff;
+          color: black;
+        }
+
+        .nav-items {
+            position: relative;
+        }
+
+        li.nav-items:hover::after {
+            width: 100%;
+        }
+
+        button {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 19px;
+            font-weight: 500;
+            box-shadow: 1px 1px 313px 2px rgb(255, 255, 255);
+            background-image: linear-gradient(-45deg, #e0d7ff 0%, #544fff 100%);
+            border-style: none;
+            border-radius: 67px;
+            padding: 15px 30px 15px 30px;
+            margin: 23px 34px 34px 34px;
+
+            text-decoration: none;
+            color: rgb(34, 34, 34);
+
+        }
+
+        button a {
+            text-decoration: none;
+
+            color: rgb(0, 0, 0);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .con2 {
+            width: 20%;
+            margin: 67px 67px 67px 67px;
+            padding: 67px 67px 56px 56px;
+
+        }
+
+        .col4 {
+            align-items: right;
+            margin: 34px 34px 34px 34px;
+            padding: 43px 43px 43px 43px;
+            width: 120%;
+            float: right;
+
+        }
+
+        .containers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45vh;
+
+        }
+        .r3{
+            background-color: #000;
+           border: 23px solid black;
+            border: #000;border: #000;
+            border-radius: 23px ;
+            border-top-right-radius: 0%;
+        }
+
+        .text {
+            flex: 1;
+            margin: 45px 45px 45px 45px;
+            padding: 45px 45px 45px 45px;
+            text-align: left;
+            color: azure;
+            font-size: 22px;
+        }
+
+        .image-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .round-image {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            margin: 34px 34px 34px;
+            border: 5px solid rgb(72, 243, 255);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            top: 2px;
+        }
+
+        h1 {
+            color: antiquewhite;
+            font-size: 34px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        li a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        .section-1 {
+            color: #ffffff;
+            border: 2px solid black;
+            border-radius: 23px;
+            position: relative;
+            float: left;
+            margin: 34px 34px 34px 34px;
+            box-sizing: border-box;
+            height: 440px;
+            width: 20%;
+            text-align: center;
+        }
+
+        H3 {
+
+            content: "";
+            position: relative;
+            justify-content: space-between;
+            margin: 67px 67px 67px 67px;
+            padding: 76px 76px 76px 65px;
+            border-radius: 33px;
+            columns: unset;
+            text-indent: 23px;
+
+        }
+        @font-face {
+  font-family: "Geist Sans";
+  src: url("https://assets.codepen.io/605876/GeistVF.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --speed: 0.25s;
+}
+
+body {
+  display: grid;
+  place-items: center;
+
+  background-image: url(https://i.ibb.co/9gS2XD2/New-Project.png);
+  background-size: cover; 
+
+  font-family: "Geist Sans", sans-serif;
+}
+
+  
+
+button {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  border: 1px solid hsl(0 0% 100% / 0.25);
+  border-radius: 100px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto 3.5em;
+  gap: 1.5em;
+  font-family: "Geist Sans", sans-serif;
+  font-weight: 80;
+  background:
+    hsl(280 0% 12%);
+  color: hsl(0 0% 90%);
+  padding: 0.5em 0.5em 0.5em 1.5em;
+  place-items: center;
+  box-shadow:
+    0 1px inset hsl(0 0% 100% / 0.5),
+    0 -10px 20px 10px hsl(0 0% 0% / 0.5) inset,
+    0 10px 20px 10px hsl(0 0% 50% / 0.25) inset,
+    0 1px hsl(0 0% 2% / 0.75);
+  letter-spacing: 0.05ch;
+  box-sizing: border-box;
+  box-shadow: 2px 3px 223px 22px  rgb(23, 240, 255);
+}
+
+button:focus-visible {
+  outline-offset: 0.5em;
+  outline-color: hsl(280 80% 80% / 0.5);
+}
+
+.icon {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0.5em;
+}
+
+.icon {
+  overflow: hidden;
+}
+
+.icon svg {
+  width: 50%;
+  overflow: visible !important;
+}
+
+svg path:nth-of-type(2) {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  transition:
+    fill var(--speed),
+    rotate var(--speed),
+    scale var(--speed),
+    translate var(--speed);
+}
+
+svg path:nth-of-type(1) {
+  translate: 5rem 0;
+  transform-box: fill-box;
+  transition: translate var(--speed);
+  opacity: 0.75;
+}
+
+button:is(:hover, :focus-visible) svg path:nth-of-type(2) {
+  translate: 0 -50%;
+  rotate: 290deg;
+  scale: 0.65;
+  fill: hsl(0 0% 20%);
+  transition-timing-function: ease, ease, cubic-bezier(.2, .7, .9, 1.5);
+}
+
+button:is(:hover, :focus-visible) svg path:nth-of-type(1) {
+  translate: 0 0;
+}
+
+.action {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  background:
+    linear-gradient(transparent 50%, hsl(0 0% 30% / 0.5)),
+    hsl(0 0% 0%);
+  box-shadow: 0 -1px inset hsl(0 0% 100% / 0.35);
+  width: 3.5em;
+  aspect-ratio: 1;
+  transition: width var(--speed);
+  border-radius: 100px;
+}
+
+.icon {
+  color: hsl(0 0% 90%);
+  display: grid;
+  place-items: center;
+  z-index: 2;
+}
+
+.text {
+  display: inline-block;
+  z-index: 2;
+  padding: 0 2rem;
+}
+
+button:is(:hover, :focus-visible) .action {
+  width: 100%;
+}
+buttons a {
+    text-decoration: none;
+    background-color: #544fff;
+    margin: 34px 34px 34px 34px;
+  padding: 12px 12px 12px 12px;
+    border:  solid;
+    border-radius: 78px;
+    color: #fff;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="https://leadloom.io/wp-content/uploads/2024/05/brandmark-design-51-1.png" alt=""
+                        class="logo">
+                </div>
+                <div class="col-2">
+                    <ul class="navbar">
+                        <li class="nav-items"> <a href="index.html">Home</li></a>
+                        <li class="nav-items"><a href="index.html">About</li></a>
+                        <li class="nav-items"><a href="index.html">Team</li></a>
+                        <li class="nav-items"><a href="index.html">Project</li></a>
+                        <li class="nav-items"><a href="index.html">Contact</li></a>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <buttons><a href="#">LOGIN</a></buttons>
+                </div>
+            </div>
+            <br>
+            <br><br><br><br><br>
+            <br>
+            <div class="containers">
+                <div class="text">
+                    <h1>Convert Leads to Clients with a Strong Online Presence</h1>
+                    <p>Create a high-quality website that delivers an exceptional user experience, establishes your
+                        brand’s credibility, and converts visitors into loyal customers. Our custom web development
+                        solutions are designed to drive traffic, increase engagement, and boost your sales. With
+                        seamless integration and tailored features, we ensure your online presence stands out and
+                        performs at its best. Let’s elevate your business together!</p>
+                </div>
+                <br>
+                <br>
+                <div class="image-container">
+                    <img src="https://leadloom.io/wp-content/uploads/2024/05/Hero-Slide-4-copy.png" alt="Image"
+                        class="round-image">
+                </div>
+                <hr>
+                <br><br><br>
+
+
+
+
+            </div>
+        </div>
+    </div>
+ 
+    <br>
+    <br><br><br>
+    <br>
+    <button>
+        <span class="backdrop">
+          <span class="action"></span>
+        </span>
+        <span class="text">
+          Send Mail
+        </span>
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <!-- Tray -->
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
+            <!-- Envelope -->
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+        </span>
+      </button>
+          
+          
+      
+</html>-
+</body>
+
+</html>
+
